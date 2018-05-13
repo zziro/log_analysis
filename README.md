@@ -13,9 +13,11 @@ When it comes to run the project you should follow the below steps:
 
 	git clone https://github.com/zziro/log_analysis
 
-4.- After that, you will see a folder log_analysis, inside it, you will see a file called 	app.py, execute that file, using the following command:	
+4.- After that, you will see a folder called log_analysis, inside it, you will find the file app.py, execute that file, using the
+    following command:	
 
 	python app.py
 
 5.- Once you do that, you will see a file called results.txt where you
 	will be able to check all the results of the three tasks.
+
