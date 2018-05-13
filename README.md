@@ -3,15 +3,16 @@ Project related to track most popular articles, authors and erros.
 
 When it comes to run the project you should follow the below steps:
 
-P.S: I am asuming you have the vagrant virtual machine and connected to the database "news".
 
-1.- Go to the file "source_code.txt" and there you will find three views. 
-2.- Run one by one all of those views.
-3.- In order to execute the views, run the bellow commands:
+1.- Create a folder in your local machine. (p.s. project)
+2.- Go to that folder ({path}/project) and clone the project "log_analysis", using
+	the  following command.
 
-	SELECT * FROM most_popular_articles;
-	SELECT * FROM most_popular_authors;
-	SELECT * FROM days_with_more_errors;
-4.- Once you do that, you will be able to see the results like output.txt file.
+	git clone https://github.com/zziro/log_analysis
 
+3.- After that, you will see a folder log_analysis, inside it, you will see a file called 	app.py, execute that file, using the following command:	
 
+	python app.py
+
+2.- Once you do that, you will see a file called results.txt where you
+	will be able to check all the results of the three tasks.
