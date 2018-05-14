@@ -36,18 +36,18 @@ Vagrant:
 Running the virtual machine:
 
    By command line navigate to the vagrant folder and execute 'vagrant up':
-   fullstack-nanodegree-vm-master/vagrant$ vagrant up
+   * fullstack-nanodegree-vm-master/vagrant$ vagrant up
 
 Logging into the virtual machine:
 
    By command line navigate to the vagrant folder and execute 'vagrant ssh':
-   fullstack-nanodegree-vm-master/vagrant$ vagrant ssh	
+   * fullstack-nanodegree-vm-master/vagrant$ vagrant ssh	
 
 Loading data:
 
    Inside 'log_analysis' folder there is a .zip file named newsdata.zip, unzip that using:
 
-   unzip newsdata.zip
+   * unzip newsdata.zip
 
    Then we will see the file newsdata.sql, copy and paste to the vagrant folder and execute the following command.	
 
@@ -65,19 +65,19 @@ Running 'Log_Analysis' project:
 
    Before to run the project, we need to install the PrettyTable library. This library will rich the outputs of the results.	
    
-   fullstack-nanodegree-vm-master/vagrant$ sudo pip3 install PTable
+   * fullstack-nanodegree-vm-master/vagrant$ sudo pip3 install PTable
 
    By command line navigate go to the vagrant folder and clone the git 'log_analysis' project.
 
-   fullstack-nanodegree-vm-master/vagrant$ git clone https://github.com/zziro/log_analysis
+   * fullstack-nanodegree-vm-master/vagrant$ git clone https://github.com/zziro/log_analysis
 
    this will create a 'log_analysis' folder. Change your directoy to 'log_analysis'.
 
-   fullstack-nanodegree-vm-master/vagrant$ cd /log_analysis
+   * fullstack-nanodegree-vm-master/vagrant$ cd /log_analysis
 
    and run the app.py
 
-   fullstack-nanodegree-vm-master/vagrant/log_analysis$ python app.py
+   * fullstack-nanodegree-vm-master/vagrant/log_analysis$ python app.py
 
    Once you that, you will see a .txt file called results.txt. 
 
