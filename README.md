@@ -1,23 +1,83 @@
 # log_analysis
-Project related to track most popular articles, authors and erros.
 
-When it comes to run the project you should follow the below steps:
+'News' is a popular newspaper which has big audience of readers who daily are pending about new articles and relevant information.
 
-1.- Go to the "FSND-Virtual-Machine" tool. Inside it, go to the shared folder 
-	vagrant ({path}/FSND-Virtual-Machine/vagrant).
+In this project you will get answers such as:
 
-2.- Create a folder. (p.s. project).
+* What are the most pupular aticles that the users prefer to read.
+* What authors are most prefered to read.
+* In which day the newspaper could not attent all request, base on that the error rate was more than 1%.
 
-3.- Go to that folder (/project) and clone the project "log_analysis", using
-	the  following command.
+To get all information listed above, the Information Technology area, store the data in three tables:
 
-	git clone https://github.com/zziro/log_analysis
+Authors.- Store information about authors.
+Articles.- Store information regarding articles.
+Log.- Store information regarding each time the user has accessed the site.
 
-4.- After that, you will see a folder called log_analysis, inside it, you will find the file app.py, execute that file, using the
-    following command:	
 
-	python app.py
+The following are prerequisites for this project:
 
-5.- Once you do that, you will see a file called results.txt where you
-	will be able to check all the results of the three tasks.
+* Virtualbox 5.1.34.- you can download it from https://www.virtualbox.org/wiki/Download_Old_Builds_5_0 
+* Vagrant 1.8.5.- you can download it from https://github.com/udacity/fullstack-nanodegree-vm
 
+
+Installing tools:
+
+Virtualbox:
+	Once you download VirtualBox in your local, follow this steps: https://askubuntu.com/questions/264292/how-do-i-install-virtualboxs-deb-package	
+
+Vagrant:
+	Go to the folling repository and clone the project.
+	git clone https://github.com/udacity/fullstack-nanodegree-vm
+
+	Once you do that, you will have a folder called 'fullstack-nanodegree-vm-master'(normally is located on your Download folder), inside there, there is a folder called 'vagrant', this folder is shared between your local machine and your virtual machine. 	
+
+
+Running the virtual machine:
+
+	By command line navigate to the vagrant folder and execute 'vagrant up':
+	fullstack-nanodegree-vm-master/vagrant$ vagrant up
+
+Logging into the virtual machine:
+
+	By command line navigate to the vagrant folder and execute 'vagrant ssh':
+	fullstack-nanodegree-vm-master/vagrant$ vagrant ssh	
+
+Loading data:
+
+	Inside 'log_analysis' folder there is a .zip file named newsdata.zip, unzip that using:
+
+		unzip newsdata.zip
+
+	Then we will see the file newsdata.sql, copy and paste to the vagrant folder and execute the following command.	
+
+	fullstack-nanodegree-vm-master/vagrant$ psql -d news -f newsdata.sql
+
+	The commnads 'psql','-d','-f' stands for:
+		* psql .- The PostgreSQL command line program
+		*-d .- Refers to the database to be connected ('news' database in our case) 
+		*-f .-  Refers the file to be readed.
+
+	Running the above command ensure to be connected to the 'news' database and we will able to interact with the data content on it.
+
+
+Running 'Log_Analysis' project:
+
+	Before to run the project, we need to install the PrettyTable library. This library will rich the outputs of the results.	
+	fullstack-nanodegree-vm-master/vagrant$ sudo pip3 install PTable
+		
+	By command line navigate go to the vagrant folder and clone the git 'log_analysis' project.
+
+    	fullstack-nanodegree-vm-master/vagrant$ git clone https://github.com/zziro/log_analysis
+
+    this will create a 'log_analysis' folder. Change your directoy to 'log_analysis'.
+
+        fullstack-nanodegree-vm-master/vagrant$ cd /log_analysis
+
+    and run the app.py
+
+    	fullstack-nanodegree-vm-master/vagrant/log_analysis$ python app.py
+
+    Once you that, you will see a .txt file called results.txt. 
+
+    Note: In order to make sure if the app.py generate the result.txt file, delete it, and run the app.py file again.
