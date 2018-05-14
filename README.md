@@ -53,11 +53,11 @@ Loading data:
 
    * unzip newsdata.zip
 
-   Then we you will see the file newsdata.sql, copy and paste to the vagrant folder and execute the following command.	
+   Then we you will see the file newsdata.sql, copy and paste it to the vagrant folder and execute the following command.	
 
    fullstack-nanodegree-vm-master/vagrant$ psql -d news -f newsdata.sql
 
-   The commnads 'psql','-d','-f' stands for:
+   The commands 'psql','-d','-f' stands for:
    * psql .- The PostgreSQL command line program
    * -d .- Refers to the database to be connected ('news' database on this case) 
    * -f .-  Refers the file to be readed.
@@ -67,7 +67,7 @@ Loading data:
 
 Running 'Log_Analysis' project:
 
-   Before to run the project, we need to install the PrettyTable library. This library will rich the outputs of the results.	
+   Before to run the project, you will need to install the PrettyTable library. This library will rich the outputs of the results.	
    
    * fullstack-nanodegree-vm-master/vagrant$ sudo pip3 install PTable
 
@@ -81,4 +81,4 @@ Running 'Log_Analysis' project:
 
    Once you that, you will see a .txt file called results.txt. 
 
-   Note: In order to make sure if the app.py generate the result.txt file, delete it, and run the app.py file again.
+   Note: In order to make sure if the app.py generate the results.txt file, delete it, and run the app.py file again.
