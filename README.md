@@ -28,7 +28,7 @@ Virtualbox:
 
 Vagrant:
 	Go to the following repository and clone the project.
-	* git clone https://github.com/udacity/fullstack-nanodegree-vm
+   * git clone https://github.com/udacity/fullstack-nanodegree-vm
 
    Once you do that, you will have a folder called 'fullstack-nanodegree-vm-master' (normally is located on your Download folder), inside there, there is a folder called 'vagrant', this folder is shared between your local machine and your virtual machine. 	
 
