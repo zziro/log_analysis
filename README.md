@@ -4,11 +4,11 @@ News is a popular newspaper which has big audience of readers who are daily pend
 
 In this project you will get answers such as:
 
-* What are the most pupular articles that the users prefer to read.
+* What are the most popular articles that the users prefer to read.
 * What authors are most prefered to read.
 * In which day the newspaper could not attent all request, base on that, the error rate was more than 1%.
 
-To get all information listed above, the Information Technology area, store the data in three tables:
+To get all information listed above, the Information Technology area, store the data into three tables:
 
 * Authors.- Store information about authors.
 * Articles.- Store information regarding articles.
@@ -24,11 +24,11 @@ The following are prerequisites for this project:
 Installing tools:
 
 Virtualbox:
-	Once you download VirtualBox in your local, follow this steps: https://askubuntu.com/questions/264292/how-do-i-install-virtualboxs-deb-package	
+	Once you download VirtualBox in your local, follow these steps: https://askubuntu.com/questions/264292/how-do-i-install-virtualboxs-deb-package	
 
 Vagrant:
 	Go to the following repository and clone the project.
-	git clone https://github.com/udacity/fullstack-nanodegree-vm
+	* git clone https://github.com/udacity/fullstack-nanodegree-vm
 
    Once you do that, you will have a folder called 'fullstack-nanodegree-vm-master' (normally is located on your Download folder), inside there, there is a folder called 'vagrant', this folder is shared between your local machine and your virtual machine. 	
 
@@ -53,7 +53,7 @@ Loading data:
 
    * unzip newsdata.zip
 
-   Then we you will see the file newsdata.sql, copy and paste it to the vagrant folder and execute the following command.	
+   Then  you will see the file newsdata.sql, copy and paste it to the vagrant folder and execute the following command.	
 
    fullstack-nanodegree-vm-master/vagrant$ psql -d news -f newsdata.sql
 
