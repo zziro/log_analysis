@@ -1,12 +1,12 @@
 # log_analysis
 
-News is a popular newspaper which has big audience of readers who daily are pending about new articles and relevant information.
+News is a popular newspaper which has big audience of readers who are daily pending about new articles and relevant information.
 
 In this project you will get answers such as:
 
-* What are the most pupular aticles that the users prefer to read.
+* What are the most pupular articles that the users prefer to read.
 * What authors are most prefered to read.
-* In which day the newspaper could not attent all request, base on that the error rate was more than 1%.
+* In which day the newspaper could not attent all request, base on that, the error rate was more than 1%.
 
 To get all information listed above, the Information Technology area, store the data in three tables:
 
@@ -30,7 +30,7 @@ Vagrant:
 	Go to the following repository and clone the project.
 	git clone https://github.com/udacity/fullstack-nanodegree-vm
 
-   Once you do that, you will have a folder called 'fullstack-nanodegree-vm-master'(normally is located on your Download folder), inside there, there is a folder called 'vagrant', this folder is shared between your local machine and your virtual machine. 	
+   Once you do that, you will have a folder called 'fullstack-nanodegree-vm-master' (normally is located on your Download folder), inside there, there is a folder called 'vagrant', this folder is shared between your local machine and your virtual machine. 	
 
 
 Running the virtual machine:
@@ -45,20 +45,24 @@ Logging into the virtual machine:
 
 Loading data:
 
+   By command line navigate go to the vagrant folder and clone the git 'log_analysis' project.
+
+   * fullstack-nanodegree-vm-master/vagrant$ git clone https://github.com/zziro/log_analysis
+
    Inside 'log_analysis' folder there is a .zip file named newsdata.zip, unzip that using:
 
    * unzip newsdata.zip
 
-   Then we will see the file newsdata.sql, copy and paste to the vagrant folder and execute the following command.	
+   Then we you will see the file newsdata.sql, copy and paste to the vagrant folder and execute the following command.	
 
    fullstack-nanodegree-vm-master/vagrant$ psql -d news -f newsdata.sql
 
    The commnads 'psql','-d','-f' stands for:
    * psql .- The PostgreSQL command line program
-   * -d .- Refers to the database to be connected ('news' database in our case) 
+   * -d .- Refers to the database to be connected ('news' database on this case) 
    * -f .-  Refers the file to be readed.
 
-   Running the above command ensure to be connected to the 'news' database and we will able to interact with the data content on it.
+   Running the above command ensure to be connected to the 'news' database and you will able to interact with the data content on it.
 
 
 Running 'Log_Analysis' project:
@@ -67,11 +71,7 @@ Running 'Log_Analysis' project:
    
    * fullstack-nanodegree-vm-master/vagrant$ sudo pip3 install PTable
 
-   By command line navigate go to the vagrant folder and clone the git 'log_analysis' project.
-
-   * fullstack-nanodegree-vm-master/vagrant$ git clone https://github.com/zziro/log_analysis
-
-   this will create a 'log_analysis' folder. Change your directoy to 'log_analysis'.
+   Change your directoy to 'log_analysis'.
 
    * fullstack-nanodegree-vm-master/vagrant$ cd /log_analysis
 
